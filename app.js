@@ -107,7 +107,7 @@ mongoose
     'mongodb+srv://minhduc100298:iloveGMAIL1998@cluster0.ozi4b.mongodb.net/messages?retryWrites=true&w=majority'
   )
   .then((result) => {
-    app.listen(8080);
+    app.listen(process.env.PORT || 5000);
   })
   .catch((err) => {
     console.log(err);
